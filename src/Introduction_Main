@@ -1,0 +1,50 @@
+What is Java
+Java is a popular and powerful programming language, created in 1995.It is owned by Oracle, and more than 3 Billion devices run Java.
+
+It is used for:
+1. Mobile applications (specially Android apps)
+2. Desktop applications
+3. Web applications
+4. Web servers and application servers
+5. Games
+6.Database connection
+7. And much, much more!
+
+Why Use Java?
+Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)
+1. It is one of the most popular programming languages in the world
+2. It has a large demand in the current job market
+3. It is easy to learn and simple to use
+4. It is open-source and free
+5. It is secure, fast and powerful
+6. It has huge community support (tens of millions of developers)
+7. Java is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs
+8. As Java is close to C++ and C#, it makes it easy for programmers to switch to Java or vice versa
+
+----------------------------------------------
+JAVA SYNTAX
+Every line of code that runs in Java must be inside a class. The class name should always start with an uppercase first letter. In our example, we named the class Main.
+
+Note: Java is case-sensitive. MyClass and myclass would be treated as two completely different names.
+
+The name of the Java file must match the class name. So if your class is called Main, the file must be saved as Main.java. This is because Java uses the class name to find and run your code. If the names don't match, Java will give an error and the program will not run.
+
+--------------------------------------
+THE MAIN METHOD
+The main() method is required in every Java program. It is where the program starts running:
+
+public static void main(String[] args)
+
+Any code placed inside the main() method will be executed.
+
+-----------------------------------------------
+
+System.out.println()
+Inside the main() method, we can use the println() method to print a line of text to the screen:
+
+Example
+
+public static void main(String[] args) {
+  System.out.println("Hello World");
+}
+
