@@ -48,3 +48,68 @@ public static void main(String[] args) {
   System.out.println("Hello World");
 }
 
+------------------------------------------------------------
+Statements
+A computer program is a list of "instructions" to be "executed" by a computer.
+
+In a programming language, these programming instructions are called statements.
+
+The following statement "instructs" the compiler to print the text "Java is fun!" to the screen:
+
+ExampleGet your own Java Server
+System.out.println("Java is fun!");
+It is important that you end the statement with a semicolon ;.
+
+If you forget the semicolon (;), an error will occur and the program will not run:
+
+Example
+System.out.println("Java is fun!")
+Result:
+
+error: ';' expected
+
+---------------------------------------------------
+
+Many Statements
+Most Java programs contain many statements.
+
+The statements are executed, one by one, in the same order as they are written:
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello World!");
+    System.out.println("Have a good day!");
+    System.out.println("Learning Java is fun!");
+  }
+}
+
+Many Statements
+Most Java programs contain many statements.
+
+The statements are executed, one by one, in the same order as they are written:
+
+-------------------------------------------
+Java Output / Print
+
+ Print Text
+
+You can use the println() method to output values or print text in Java:
+You can add as many printIn() methods as you want. Note that it will add a new line for each method
+
+Double Quotes
+Text must be wrapped inside double quotations marks "".
+If you forget the double quotes, an error occurs:
+
+--------------------------
+The Print() Method
+
+There is also a print() method, which is similar to println().
+The only difference is that it does not insert a new line at the end of the output
+------------------------
+Print Numbers
+You can also use the println() method to print numbers.
+
+However, unlike text, we don't put numbers inside double quotes:
+You can also perform mathematical calculations inside the println() method:
+
+-----------------------------------------------------------
