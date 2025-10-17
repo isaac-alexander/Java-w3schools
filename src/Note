@@ -113,3 +113,25 @@ However, unlike text, we don't put numbers inside double quotes:
 You can also perform mathematical calculations inside the println() method:
 
 -----------------------------------------------------------
+Declaring (Creating) Variables
+To create a variable in Java, you need to:
+
+Choose a type (like int or String)
+Give the variable a name (like x, age, or name)
+Optionally assign it a value using =
+Here's the basic syntax:
+type variableName = value;
+
+---------------------------------------------------------------
+
+Display Variables
+The println() method is often used to display variables.
+To combine both text and a variable, use the + character:
+
+You can also use the + character to add a variable to another variable:
+
+In Java, the + symbol has two meanings:
+
+For text (strings), it joins them together (called concatenation).
+For numbers, it adds values together.
+For numeric values, the + character works as a mathematical operator (we use int (integer) variables here):
