@@ -6,7 +6,7 @@
 // A program to calculate the area of a rectangle (by multiplying the length and width):
 
 
-public class VariableRealLifeExamples {
+public class RealLifeExamplesVariables {
     static void main(String[] args) {
         // Student data
         String studentName = "John Doe";
