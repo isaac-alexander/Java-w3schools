@@ -21,7 +21,16 @@
 // Use else if to specify a new condition to test, if the first condition is false
 // Use switch to specify many alternative blocks of code to be executed
 
-//EXAMPLES
+// The if Statement
+
+// The if statement specifies a block of code to be executed if a condition is true:
+//
+//Syntax
+//if (condition) {
+//        // block of code to be executed if the condition is true
+//        }
+
+//EXAMPLES //  Writing if (isLightOn) is the same as writing if (isLightOn == true), but shorter and easier to read.
 
 public class IfStatement {
     static void main(String[] args) {
@@ -30,5 +39,30 @@ public class IfStatement {
         if (isRaining) {
             System.out.println("Bring an umbrella!"); // Bring an umbrella
         }
+
+        if (20 > 18) {
+            System.out.println("20 is greater than 18"); // 20 is greater than 18
+        }
+
+        int x = 20;
+        int y = 18;
+        if (x > y) {
+            System.out.println("x is greater than y");
+        }
+
+        // Comparison is also often used to check if two values are equal, using the == operator:
+        int x2 = 20;
+        int y2 = 20;
+        if (x2 == y2) {
+            System.out.println("x2 is equal to y3"); // x2 is equal to y2
+        }
+
+        // Using Boolean Variables
+        boolean isLightOn = true;
+
+        if (isLightOn) {
+            System.out.println("The light is on.");
+        }
+
     }
 }
