@@ -12,6 +12,7 @@
 
 //Example
 
+
 public class JavaMath {
     // Math.max(x,y)
     // The Math.max(x,y) method can be used to find the highest value of x and y:
