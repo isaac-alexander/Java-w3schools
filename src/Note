@@ -166,3 +166,6 @@ There are eight primitive data types in Java:
 
 
 Factorial means multiplying a number by every number below it, down to 1. For example, the factorial of 5 is: 5 * 4 * 3 * 2 * 1 = 120. By definition, 0! is also 1. (FROM Java Recursion, Calculate Factorial with Recursion)
+
+What is OOP?
+OOP stands for Object-Oriented Programming.
