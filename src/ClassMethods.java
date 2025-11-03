@@ -29,14 +29,12 @@ public class ClassMethods {
         System.out.println("Max speed is: " + maxSpeed);
     }
 
-    // Inside main, call the methods on the myCar object
+    // Inside ClassMethods, call the methods on the myCar object
     public static void main(String[] args) {
-        Main myCar = new Main();     // Create a myCar object
-  //      myCar.fullThrottle();      // Call the fullThrottle() method
-  //      myCar.speed(200);          // Call the speed() method
+        ClassMethods myCar = new ClassMethods();     // Create a myCar object
+        myCar.fullThrottle();      // Call the fullThrottle() method
+        myCar.speed(200);          // Call the speed() method
 
         myMethod();
     }
 }
-
-// I DON'T UNDERSTAND THIS SIR
