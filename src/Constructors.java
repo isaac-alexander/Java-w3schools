@@ -12,14 +12,27 @@
 public class Constructors {
     int x;
 
+    int modelYear;
+    String modelName;
+
     // Create a class constructor for the Constructor class
     public Constructors() {
         x = 5;
     }
 
+    // Constructor Parameters
+    // You can have as many parameters as you want:
+    public Constructors(int year, String name) {
+        modelYear = year;
+        modelName = name;
+    }
+
     public static void main(String[] args) {
-        Main myObj = new Main();
-        System.out.println(myObj.x);
+        Constructors myObj = new Constructors();
+        System.out.println(myObj.x); // 5
+
+        Constructors myCar = new Constructors(1969, "Mustang");
+        System.out.println(myCar.modelYear + " " + myCar.modelName); // 1969 Mustang
     }
 }
 
