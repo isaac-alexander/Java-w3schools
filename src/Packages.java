@@ -25,9 +25,18 @@
 //
 //To use the Scanner class, create an object of the class and use any of the available methods found in the Scanner class documentation. In our example, we will use the nextLine() method, which is used to read a complete line:
 
+
+// Import a Package
+//There are many packages to choose from. In the previous example, we used the Scanner class from the java.util package. This package also contains date and time facilities, random-number generator and other utility classes.
+
+// To import a whole package, end the sentence with an asterisk sign (*). The following example will import ALL the classes in the java.util package:
+
 // Example
 //Using the Scanner class to get user input:
 import java.util.Scanner; // import the Scanner class
+
+import java.util.*; // import the java.util package
+
 
 public class Packages {
     public static void main(String[] args) {
@@ -41,3 +50,14 @@ public class Packages {
         System.out.println("Username is: " + userName);
     }
 }
+
+// User-defined Packages
+//To create your own package, you need to understand that Java uses a file system directory to store them. Just like folders on your computer:
+//
+//Example
+//└── root
+//  └── mypack
+//    └── MyPackageClass.java
+//To create a package, use the package keyword:
+//
+//MyPackageClass.java
