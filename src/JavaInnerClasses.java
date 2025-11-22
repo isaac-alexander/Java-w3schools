@@ -3,5 +3,13 @@
 //
 //To access the inner class, create an object of the outer class, and then create an object of the inner class:
 
-public class InnerClasses {
+
+// Private Inner Class
+//Unlike a "regular" class, an inner class can be private or protected. If you don't want outside objects to access the inner class, declare the class as private:
+
+// Static Inner Class
+//An inner class can also be static, which means that you can access it without creating an object of the outer class:
+
+public class JavaInnerClasses {
+
 }
