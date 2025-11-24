@@ -7,27 +7,22 @@
 
 public class AnonymousClass {
     // Normal class
-    static class Animal {
         public void makeSound() {
             System.out.println("Animal sound");
         }
-    }
-
-    public class Main {
-        public static void main(String[] args) {
-            // Anonymous class that overrides makeSound()
-            Animal myAnimal = new Animal() {
-                public void makeSound() {
-                    System.out.println("Woof woof");
-                }
-            };
-
-            myAnimal.makeSound();
-        }
-    } // The output will be: Woof woof
-
 }
+ class vain {
+    public static void main(String[] args) {
+        // Anonymous class that overrides makeSound()
+        AnonymousClass myAnimal = new AnonymousClass() {
+            public void makeSound() {
+                System.out.println("Woof woof");
+            }
+        };
 
+        myAnimal.makeSound();
+    }
+} // The output will be: Woof woof
 // Anonymous Class from an Interface
 //You can also use an anonymous class to implement an interface on the fly:
 // Interface
