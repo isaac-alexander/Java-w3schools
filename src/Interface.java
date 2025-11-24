@@ -10,58 +10,47 @@
 
 // To access the interface methods, the interface must be "implemented" (kinda like inherited) by another class with the implements keyword (instead of extends). The body of the interface method is provided by the "implement" class:
 
+interface Pnimal {
+    public void animalSound(); // interface method (does not have a body)
+    public void sleep(); // interface method (does not have a body)
+}
 
-public class Interface {
-    interface Animal {
-        public void animalSound(); // interface method (does not have a body)
-        public void sleep(); // interface method (does not have a body)
-    }
+// Multiple Interfaces
+// To implement multiple interfaces, separate them with a comma:
+interface FirstInterface {
+    public void myMethod(); // interface method
+}
 
-    class Pig implements Animal {
+interface SecondInterface {
+    public void myOtherMethod(); // interface method
+}
+public class Interface implements Pnimal,  FirstInterface, SecondInterface{
+
         public void animalSound() {
             System.out.println("The pig says: wee wee");
         }
         public void sleep() {
             System.out.println("Zzz");
         }
-    }
-
-    class Main {
-        public static void main(String[] args) {
-            Pig myPig = new Pig();
-            myPig.animalSound();
-            myPig.sleep();
-        }
-    }
-
-    // Multiple Interfaces
-    // To implement multiple interfaces, separate them with a comma:
-    interface FirstInterface {
-        public void myMethod(); // interface method
-    }
-
-    interface SecondInterface {
-        public void myOtherMethod(); // interface method
-    }
 
     // DemoClass "implements" FirstInterface and SecondInterface
-    class DemoClass implements FirstInterface, SecondInterface {
         public void myMethod() {
             System.out.println("Some text..");
         }
         public void myOtherMethod() {
             System.out.println("Some other text...");
         }
-    }
 
-    class Main {
-        public static void main(String[] args) {
-            DemoClass myObj = new DemoClass();
-            myObj.myMethod();
-            myObj.myOtherMethod();
-        }
-    }
+}
 
+class New {
+    public static void main(String[] args) {
+        Interface myPig = new Interface();
+        myPig.animalSound();
+        myPig.sleep();
+        myPig.myMethod();
+        myPig.myOtherMethod();
+    }
 }
 
 // Notes on Interfaces:
