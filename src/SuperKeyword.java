@@ -19,25 +19,12 @@
 
 public class SuperKeyword {
     // Access Parent Methods
-    class Animal {
         public void animalSound() {
             System.out.println("The animal makes a sound");
         }
-    }
 
-    class Dog extends Animal {
-        public void animalSound() {
-            super.animalSound(); // Call the parent method
-            System.out.println("The dog says: bow wow");
-        }
-    }
 
-    public class Main {
-        public static void main(String[] args) {
-            Dog myDog = new Dog();
-            myDog.animalSound();
-        }
-    } // Output://    The animal makes a sound
+   // Output://    The animal makes a sound
                 //    The dog says: bow wow
 
     //Access Parent Attributes
@@ -60,6 +47,19 @@ public class SuperKeyword {
 //        }
 //    } // Output: //Animal
 
+}
+
+class Dog3 extends SuperKeyword {
+    public void animalSound() {
+        super.animalSound(); // Call the parent method
+        System.out.println("The dog says: bow wow");
+    }
+}
+class Qain {
+    public static void main(String[] args) {
+        Dog3 myDog = new Dog3();
+        myDog.animalSound();
+    }
 }
 
 //Call Parent Constructor
