@@ -10,33 +10,33 @@
 //An abstract class can have both abstract and regular methods:
 
 
-public class Abstraction {
+abstract class Abstraction {
     // Abstract class
-    abstract class Animal {
         // Abstract method (does not have a body)
         public abstract void animalSound();
         // Regular method
         public void sleep() {
             System.out.println("Zzz");
         }
-    }
 
-    // Subclass (inherit from Animal)
-    class Pig extends Animal {
+    // Subclass (inherit from Abstraction)
+    static class Pig extends Abstraction {
         public void animalSound() {
             // The body of animalSound() is provided here
             System.out.println("The pig says: wee wee");
         }
     }
 
-    class Main {
-        public static void main(String[] args) {
-            Pig myPig = new Pig(); // Create a Pig object
-            myPig.animalSound();
-            myPig.sleep();
-        }
-    }
 
+
+}
+
+class Aain {
+    public static void main(String[] args) {
+        Abstraction.Pig myPig = new Abstraction.Pig(); // Create a Pig object
+        myPig.animalSound();
+        myPig.sleep();
+    }
 }
 
 // Why And When To Use Abstract Classes and Methods?
