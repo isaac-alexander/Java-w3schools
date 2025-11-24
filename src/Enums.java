@@ -6,22 +6,21 @@
 
 
 //Example
+enum Level {
+    LOW,
+    MEDIUM,
+    HIGH
+}
+
+// Enum in a Switch Statement
+//Enums are often used in switch statements to check for corresponding values:
+enum Levels {
+    LOW,
+    MEDIUM,
+    HIGH
+}
 
 public class Enums {
-    enum Level {
-        LOW,
-        MEDIUM,
-        HIGH
-    }
-
-    // Enum in a Switch Statement
-    //Enums are often used in switch statements to check for corresponding values:
-    enum Levels {
-        LOW,
-        MEDIUM,
-        HIGH
-    }
-    public class Main {
         public static void main(String[] args) {
             Level myVar = Level.MEDIUM;
             System.out.println(myVar);
@@ -41,7 +40,6 @@ public class Enums {
             }
         }
     }
-}
 
 // Loop Through an Enum
 //The enum type has a values() method, which returns an array of all enum constants. This method is useful when you want to loop through the constants of an enum:
