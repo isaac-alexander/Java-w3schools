@@ -19,6 +19,15 @@ public class ClassMethods {
         System.out.println("Hello World!");
     }
 
+    // Inside ClassMethods, call the methods on the myCar object
+    static void main(String[] args) {
+        ClassMethods myCar = new ClassMethods();     // Create a myCar object
+        myCar.fullThrottle();      // Call the fullThrottle() method
+        myCar.speed(200);          // Call the speed() method
+
+        myMethod();
+    }
+
     // Create a fullThrottle() method
     public void fullThrottle() {
         System.out.println("The car is going as fast as it can!");
@@ -27,14 +36,5 @@ public class ClassMethods {
     // Create a speed() method and add a parameter
     public void speed(int maxSpeed) {
         System.out.println("Max speed is: " + maxSpeed);
-    }
-
-    // Inside ClassMethods, call the methods on the myCar object
-    public static void main(String[] args) {
-        ClassMethods myCar = new ClassMethods();     // Create a myCar object
-        myCar.fullThrottle();      // Call the fullThrottle() method
-        myCar.speed(200);          // Call the speed() method
-
-        myMethod();
     }
 }
