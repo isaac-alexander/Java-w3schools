@@ -1,4 +1,35 @@
-package PACKAGE_NAME;
+// BufferedReader and BufferedWriter
+// BufferedReader and BufferedWriter make reading and writing text files faster.
+// BufferedReader lets you read text line by line with readLine().
+// BufferedWriter lets you write text efficiently and add new lines with newLine().
+// These classes are usually combined with FileReader and FileWriter, which handle opening or creating the file. The buffered classes then make reading/writing faster by using a memory buffer.
 
+// Read a Text File (Line by Line)
+// Use BufferedReader with FileReader to read each line of a file:
+
+// Example
+
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 public class BufferedReaderTut {
+    public static void main(String[] args) {
+        try (BufferedReader br = new BufferedReader(new FileReader("filename.txt"))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                System.out.println(line);
+            }
+        } catch (IOException e) {
+            System.out.println("Error reading file.");
+        } // output : Some text from filename.txt
+
+    }
 }
+
+// Comparing File Reading Classes
+// Java gives you several ways to read files. Here's when to pick each one:
+
+// Scanner - best for simple text. It can split text into lines, words, or numbers (e.g., nextInt(), nextLine()).
+// BufferedReader - best for large text files. It is faster, uses less memory, and can read full lines with readLine().
+// FileInputStream - best for binary files (like images, PDFs, or audio)
