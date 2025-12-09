@@ -21,6 +21,13 @@
 // HashMap
 //A HashMap stores key-value pairs, which are great when you want to store values and find them by a key (like a name or ID):
 
+// Iterators
+//When learning about data structures, you will often hear about iterators too.
+//
+//An iterator is a way to loop through elements in a data structure.
+//
+//It is called an "iterator" because "iterating" is the technical term for looping.
+
 // Example
 
 // Import the ArrayList class
@@ -31,6 +38,9 @@ import java.util.HashSet;
 
 // Import the HashMap class
 import java.util.HashMap;
+
+// import the Iterator class
+import java.util.Iterator;
 
 public class DataStructures {
     public static void main(String[] args) {
@@ -62,6 +72,22 @@ public class DataStructures {
         capitalCities.put("Norway", "Oslo");
         capitalCities.put("USA", "Washington DC");
         System.out.println(capitalCities); // OUTPUT: {USA=Washington DC, Norway=Oslo, England=London, Germany=Berlin}
+
+        // Using an Iterator with ArrayList:
+        // Create an ArrayList of Strings
+        ArrayList<String> cars3 = new ArrayList<String>();
+        cars3.add("Volvo");
+        cars3.add("BMW");
+        cars3.add("Ford");
+        cars3.add("Mazda");
+
+        // Get an iterator for the ArrayList
+        Iterator<String> it = cars3.iterator();
+
+        // Iterate through the list using the iterator
+        while(it.hasNext()) {
+            System.out.println(it.next());
+        }
     }
 }
 
