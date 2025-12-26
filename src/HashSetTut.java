@@ -24,8 +24,19 @@
 // HashSet Size
 // Use size() to count how many unique elements are in the set:
 
+// Other Types
+//Elements in an HashSet are actually objects. In the examples above, we created elements (objects) of type "String". Remember that a String in Java is an object (not a primitive type). To use other types, such as int, you must specify an equivalent wrapper class: Integer. For other primitive types, use: Boolean for boolean, Character for char, Double for double, etc
+
+// The var Keyword
+//From Java 10, you can use the var keyword to declare a HashSet variable without writing the type twice. The compiler figures out the type from the value you assign.
+//
+//This makes code shorter, but many developers still use the full type for clarity. Since var is valid Java, you may see it in other code, so it's good to know that it exists:
+
+
 
 //Example
+
+import java.util.Set;
 
 // Import the HashSet class
 import java.util.HashSet;
@@ -65,7 +76,48 @@ public class HashSetTut {
         // Loop through the elements of an HashSet with a for-each loop:
         for(String i : cars){
             System.out.println(i);
+
         }
+
+        // Use a HashSet that stores Integer objects:
+        // Create a HashSet object called numbers
+        HashSet<Integer> numbers = new HashSet<Integer>();
+
+        // Add values to the set
+        numbers.add(4);
+        numbers.add(7);
+        numbers.add(8);
+
+        // Show which numbers between 1 and 10 are in the set
+        for (int i = 1; i <= 10; i++) {
+            if (numbers.contains(i)) {
+                System.out.println(i + " was found in the set.");
+            } else {
+                System.out.println(i + " was not found in the set.");
+            }
+        }
+
+        // The var Keyword
+        // Using var instead of
+        // HashSet<String> vehicles = new HashSet<String>();
+        var vehicles = new HashSet<String>(); // using var
+        vehicles.add("Volvo");
+        vehicles.add("BMW");
+        vehicles.add("Ford");
+        vehicles.add("Mazda");
+        System.out.println(vehicles); // [Volvo, Mazda, Ford, BMW]
+
+        // The Set Interface
+        //Note: Sometimes you will see both Set and HashSet in Java code, like this:
+        Set<String> cars2 = new HashSet<>();
+        cars2.add("Volvo");
+        cars2.add("BMW");
+        cars2.add("Ford");
+        cars2.add("Mazda");
+        System.out.println(cars2); // [Volvo, BMW, Ford, Mazda]
     }
 
 }
+// This means the variable (cars) is declared as a Set (the interface), but it stores a HashSet object (the actual set). Since HashSet implements the Set interface, this is possible.
+//
+//It works the same way, but some developers prefer this style because it gives them more flexibility to change the type later.
