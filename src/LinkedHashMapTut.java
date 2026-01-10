@@ -17,10 +17,17 @@
 //Add Items
 //Use the put() method to add items to the LinkedHashMap:
 
+// The var Keyword
+//From Java 10, you can use the var keyword to declare a LinkedHashMap variable without writing the type twice. The compiler figures out the type from the value you assign.
+//
+//This makes code shorter, but many developers still use the full type for clarity. Since var is valid Java, you may see it in other code, so it's good to know that it exists:
 
+// The Map Interface
+//Note: Sometimes you will see both Map and LinkedHashMap in Java code, like this:
 
 
 //Example
+import java.util.Map;
 
 // Import the LinkedHashMap class
 import java.util.LinkedHashMap;
@@ -78,7 +85,26 @@ public class LinkedHashMapTut {
         }
 
         // The var Keyword
+        // Using var instead of
+        // LinkedHashMap<String, String> capitalCities2 = new LinkedHashMap<String, String>();
+        var capitalCities2 = new LinkedHashMap<String, String>(); // using var
 
+        capitalCities2.put("England", "London");
+        capitalCities2.put("Germany", "Berlin");
+        capitalCities2.put("Norway", "Oslo");
+        capitalCities2.put("USA", "Washington D.C.");
+
+        System.out.println(capitalCities2);
+
+        // The Map Interface
+        Map<String, String> capitalCities3 = new LinkedHashMap<>();
+        capitalCities3.put("England", "London");
+        capitalCities3.put("Germany", "Berlin");
+        capitalCities3.put("Norway", "Oslo");
+        capitalCities3.put("USA", "Washington D.C.");
+
+        System.out.println(capitalCities3);
+        // This means the variable (capitalCities) is declared as a Map (the interface), but it stores a LinkedHashMap object (the actual map). Since LinkedHashMap implements the Map interface, this is possible.
 
     }
 
